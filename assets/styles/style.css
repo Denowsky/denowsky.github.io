@@ -73,8 +73,8 @@ body {
 
 .main-page-content-flex-item :hover {
     position: absolute;
-    transition: 2s;
+    transition: 1s;
     z-index: 3;
-    transform: scale(1.01);
+    transform: scale(1.001);
     margin: 10px;
 }
