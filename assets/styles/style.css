@@ -50,17 +50,17 @@ body {
     flex-direction: column;
 }
 
-.geek {
+.main-page-content-flex-item.geek {
     position: absolute;
 }
 
-.creative {
+.main-page-content-flex-item.creative {
     position: absolute;
     top: 190px;
     left: 130px;
 }
 
-.yandex {
+.main-page-content-flex-item.yandex {
     position: absolute;
     top: 380px;
     left: 260px;
@@ -68,4 +68,13 @@ body {
 
 .main-page-content-flex-item-icon {
     border-radius: 40px;
+    transform: scale(0.9);
+}
+
+.main-page-content-flex-item :hover {
+    position: absolute;
+    transition: 2s;
+    z-index: 3;
+    transform: scale(1.01);
+    margin: 10px;
 }
