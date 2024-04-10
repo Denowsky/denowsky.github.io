@@ -1037,19 +1037,19 @@
     }
 
     .support-page-body-content {
-        gap: 44px;
+        gap: 40px;
         flex-direction: column;
     }
 
     .support-page-body-content-head {
         width: 335px;
-        height: 264.55px;
+        height: 228px;
     }
 
     .support-page-body-content-table {
-        height: 428.79px;
+        height: 397.79px;
         width: 335px;
-        padding-top: 12px;
+        padding-top: unset;
     }
 
     .support-page-body-content-table-row {
@@ -1061,6 +1061,10 @@
         border-bottom: 2px solid #D0D0D0;
         flex-wrap: wrap;
         width: 335px;
+    }
+
+    .support-page-body-content-table-row.top{
+        padding-top: 4px;
     }
 
     .support-page-body-content-table-column {
@@ -1078,6 +1082,7 @@
 
     .support-page-body-content-table-row.last {
         border: unset;
+        padding-bottom: unset;
     }
 
     .support-page-body-content-foot {

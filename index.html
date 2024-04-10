@@ -97,14 +97,14 @@
                 <div class="support-page-body-content">
                     <div class="support-page-body-content-head">
                         <h1 class="support-page-head-text">
-                            и Сеанс <span class="support-page-head-text red">одновременной игры <br>в шахматы
+                            и Сеанс <span class="support-page-head-text red">одновременной игры <br class="mobile-hidden">в шахматы
                                 на 160 досках</span><br>
                             гроссмейстера О. Бендера
                         </h1>
                     </div>
                     <div class="support-page-body-content-table">
                         <table class="support-page-body-content-table-body">
-                            <tr class="support-page-body-content-table-row">
+                            <tr class="support-page-body-content-table-row top">
                                 <td class="support-page-body-content-table-column up left">Место проведения:</td>
                                 <td class="support-page-body-content-table-column up right">Клуб «Картонажник»</td>
                             </tr>
@@ -367,15 +367,27 @@
         function loadScript(url) {
             var script = document.createElement('script');
             script.src = url;
+            script.classList.add('page-script')
             document.head.appendChild(script);
         }
-        var screenWidth = window.innerWidth;
 
-        if (screenWidth <= 1439) {
-            loadScript('./assets/scripts/mobile-script.js');
-        } else {
-            loadScript('./assets/scripts/notebook-script.js');
+        function turnOnScript(width) {
+            if (width <= 1365) {
+                loadScript('./assets/scripts/mobile-script.js');
+            } else {
+                loadScript('./assets/scripts/notebook-script.js');
+            }
         }
+
+        window.addEventListener('resize', function () {
+            screenWidth = window.innerWidth;
+            console.log('Ширина страницы изменена: ' + screenWidth + 'px');
+            location.reload();
+        });
+
+        var screenWidth = window.innerWidth;
+        turnOnScript(screenWidth);
+
     </script>
     <script src="./assets/scripts/focus-script.js"></script>
 
