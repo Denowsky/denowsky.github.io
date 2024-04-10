@@ -1,394 +1,45 @@
 <!DOCTYPE html>
-<h lang="ru">
+<html lang="ru">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Клуб четырёх коней</title>
-        <link rel="stylesheet" href="./assets/styles/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Document</title>
+</head>
 
-    <body>
-        <div class="main-page">
-            <div class="head-logo">
-                <div class="head-logo-img">
-                    <img class="head-logo-img-vector" src="./assets/images/head/Vector.svg" alt="">
-                    <img class="head-logo-img-vector" src="./assets/images/head/Vector.svg" alt="">
-                    <img class="head-logo-img-vector" src="./assets/images/head/Vector.svg" alt="">
-                    <img class="head-logo-img-vector" src="./assets/images/head/Vector.svg" alt="">
+<body>
+    <div class="main-page">
+        <div class="main-page-header">
+            <details>
+                <summary class="main-page-header-details">
+                    Sannikov Denis {
+                </summary>
+                <h1 class="main-page-header-h1 down"><span class="left">Spec: </span>"Web-Development/Frontend";</h1>
+                <a class="main-page-header-link down" href="https://github.com/Denowsky/"><span class="left">link: </span>"GitHub";</a>
+                <h1 class="main-page-header-h1">}</h1>
+            </details> 
+        </div>
+        <div class="main-page-content">
+            <h1 class="main-page-content-header">
+                Porfolio
+            </h1>
+            <div class="main-page-content-flex">
+                <div class="main-page-content-flex-item geek">
+                    <img class="main-page-content-flex-item-icon" src="./assets/images/geek-icon.png" alt="">
                 </div>
-                <div class="head-logo-h1">КЛУБ <br> ЧЕТЫРЕХ КОНЕЙ</div>
-            </div>
-            <div class="center-content">
-                <div class="center-content-h1">ПРЕВРАТИТЕ УЕЗДНЫЙ ГОРОД <span class="center-content-h1-center">В
-                        СТОЛИЦУ</span> <span class="center-content-h1-right">ЗЕМНОГО ШАРА</span></div>
-                <div class="center-content-p">Оплатите взнос на телеграммы для организации Международного васюкинского
-                    турнира
-                    по шахматам</div>
-                <div class="center-content-buttons">
-                    <button onclick="showSupportPage()" class="center-content-buttons-btn support"><span
-                            class="center-content-buttons-btn-text support">Поддержать <br class="mobile-hidden">
-                            шахматную
-                            мысль</span></button>
-                    <button onclick="showMorePage()" class="center-content-buttons-btn more"><span
-                            class="center-content-buttons-btn-text more">Подробнее
-                            <br class="mobile-hidden">
-                            о турнире</span></button>
+                <div class="main-page-content-flex-item creative">
+                    <img class="main-page-content-flex-item-icon" src="./assets/images/creative-icon.png" alt="">
+                </div>
+                <div class="main-page-content-flex-item yandex">
+                    <img class="main-page-content-flex-item-icon" src="./assets/images/yandex-icon.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="background">
-            <div class="background-img"></div>
-            <div class="background-img-mask"></div>
-            <img class="background-img-ellipse-mobile hidden" src="./assets/images/background/mobile-ellipse.png"
-                alt="">
-            <img class="background-img-ellipse mobile-hidden" src="./assets/images/background/Ellipse.svg" alt="">
-            <img class="background-img-ellipse-words mobile-hidden" src="./assets/images/background/ellipsewords.svg"
-                alt="">
-            <img src="./assets/images/background/chess-l.png" alt="" class="background-img-chess-left">
-            <img src="./assets/images/background/chess-r.png" alt="" class="background-img-chess-right">
-            <img src="./assets/images/background/city.png" alt="" class="background-img-city">
-            <img src="./assets/images/background/citymargin.png" alt="" class="background-img-city-margin">
-            <img src="./assets/images/background/horse.png" alt="" class="background-img-chess-horse">
-            <img src="./assets/images/background/pawn.png" alt="" class="background-img-chess-pawn mobile-hidden">
-        </div>
-        <marquee class="footer-running-line" direction="right">
-            <span class="footer-running-line-text">Дело помощи утопающим — дело рук самих утопающих!</span>
-            <img class="footer-running-line-text-dot" src="./assets/images/footer/text-dot.svg" alt="">
-            <span class="footer-running-line-text">Шахматы двигают вперед не только культуру, но и экономику!</span>
-            <img class="footer-running-line-text-dot" src="./assets/images/footer/text-dot.svg" alt="">
-            <span class="footer-running-line-text">Лед тронулся, господа присяжные заседатели!</span>
-            <img class="footer-running-line-text-dot" src="./assets/images/footer/text-dot.svg" alt="">
-        </marquee>
-        <div class="support-page hidden">
-            <div class="support-page-head">
-                <h1 id="focus-support" class="support-page-head-text">
-                    Чтобы поддержать <br>
-                    Международный васюкинский <br class="mobile-hidden">
-                    турнир <br class="hidden">
-                    <img class="support-page-head-img hidden" src="./assets/images/head/chessplayers.png" alt="">
-                    посетите лекцию на тему: <br>
-                    <span class="support-page-head-text red">«Плодотворная дебютная идея»</span>
-                </h1>
-                <img class="support-page-head-img mobile-hidden" src="./assets/images/head/chessplayers.png" alt="">
-            </div>
-            <div class="support-page-body">
-                <div class="support-page-body-img-div">
-                    <img src="./assets/images/obender/bkgrnd.png" alt="" class="support-page-body-img-div-back">
-                    <div class="support-page-body-img-div-back-mask"></div>
-                    <img src="./assets/images/obender/paper.png" alt="" class="support-page-body-img-div-paper">
-                    <img src="./assets/images/obender/rubles.png" alt="" class="support-page-body-img-div-rub">
-                    <img src="./assets/images/obender/obenderback.svg" alt=""
-                        class="support-page-body-img-div-obenderback">
-                    <img src="./assets/images/obender/obender.png" alt="" class="support-page-body-img-div-obender">
-                    <img src="./assets/images/obender/horseback.svg" alt=""
-                        class="support-page-body-img-div-horse-back">
-                    <img src="./assets/images/obender/horse.png" alt="" class="support-page-body-img-div-horse">
-                    <img src="./assets/images/obender/hand.png" alt="" class="support-page-body-img-div-hand">
-                </div>
-                <div class="support-page-body-content">
-                    <div class="support-page-body-content-head">
-                        <h1 class="support-page-head-text">
-                            и Сеанс <span class="support-page-head-text red">одновременной игры <br class="mobile-hidden">в шахматы
-                                на 160 досках</span><br>
-                            гроссмейстера О. Бендера
-                        </h1>
-                    </div>
-                    <div class="support-page-body-content-table">
-                        <table class="support-page-body-content-table-body">
-                            <tr class="support-page-body-content-table-row top">
-                                <td class="support-page-body-content-table-column up left">Место проведения:</td>
-                                <td class="support-page-body-content-table-column up right">Клуб «Картонажник»</td>
-                            </tr>
-                            <tr class="support-page-body-content-table-row">
-                                <td class="support-page-body-content-table-column left">Дата и время мероприятия:</td>
-                                <td class="support-page-body-content-table-column right">22 июня 1927 г. в 18:00</td>
-                            </tr>
-                            <tr class="support-page-body-content-table-row">
-                                <td class="support-page-body-content-table-column left">Стоимость входных билетов:</td>
-                                <td class="support-page-body-content-table-column right">20 коп.</td>
-                            </tr>
-                            <tr class="support-page-body-content-table-row">
-                                <td class="support-page-body-content-table-column left">Плата за игру:</td>
-                                <td class="support-page-body-content-table-column right">50 коп.</td>
-                            </tr>
-                            <tr class="support-page-body-content-table-row last">
-                                <td class="support-page-body-content-table-column down left">Взнос на телеграммы:</td>
-                                <td class="support-page-body-content-table-column down right"><s
-                                        class="support-page-body-content-table-column-text-crossed">100 руб.</s> 21 руб.
-                                    16 коп.</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="support-page-body-content-foot">
-                        <a class="support-page-body-content-foot-link" href="#">По всем вопросам обращаться <br
-                                class="hidden">в администрацию
-                            к К. Михельсону</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="stage-page hidden">
-            <div class="stage-page-head">
-                <h1 class="stage-page-head-header">Этапы преображения</h1>
-                <div class="stage-page-head-header-div">
-                    <h1 class="stage-page-head-header">Васюков</h1>
-                    <a class="support-page-body-content-foot-link stage-page-head-header-link" href="#">Будущие
-                        источники
-                        <br class="mobile-hidden"> обогащения васюкинцев</a>
-                </div>
-            </div>
-            <div class="stage-page-content">
-                <div class="stage-page-content-bkgrnd">
-                    <img src="./assets/images/background/bkgrnd.jpg" alt="" class="stage-page-content-bkgrnd-img">
-                </div>
-                <div class="stage-page-content-bkgrnd-mask"></div>
-                <div class="stage-page-content-grid-item page1">
-                    <div class="stage-page-content-grid-item-num">1</div>
-                    <div class="stage-page-content-grid-item-info">Строительство <br>железнодорожной <br>магистрали
-                        Москва-Васюки</div>
-                </div>
-                <div class="stage-page-content-grid-item wrap page1">
-                    <div class="stage-page-content-grid-item-num">2</div>
-                    <div class="stage-page-content-grid-item-info">Открытие фешенебельной <br>гостиницы «Проходная
-                        <br>пешка» и других небоскрёбов
-                    </div>
-                </div>
-                <div class="stage-page-content-grid-item tall page2">
-                    <div class="stage-page-content-grid-item-num">3</div>
-                    <div class="stage-page-content-grid-item-info">Поднятие сельского <br>
-                        хозяйства в радиусе <br>
-                        на тысячу километров: <br>
-                        производство овощей, <br>
-                        фруктов, икры, шоколадных <br>
-                        конфет
-                    </div>
-                </div>
-                <div class="stage-page-content-grid-item page3">
-                    <div class="stage-page-content-grid-item-num">4</div>
-                    <div class="stage-page-content-grid-item-info">Строительство дворца <br>
-                        для турнира
-                    </div>
-                </div>
-                <div class="stage-page-content-grid-item wrap no-gap page3">
-                    <div class="stage-page-content-grid-item-num">5</div>
-                    <div class="stage-page-content-grid-item-info">Размещение гаражей <br>
-                        для гостевого <br>
-                        автотранспорта
-                    </div>
-                </div>
-                <div class="stage-page-content-grid-item bottom page4">
-                    <div class="stage-page-content-grid-item-num">6</div>
-                    <div class="stage-page-content-grid-item-info">Постройка сверхмощной <br>
-                        радиостанции для передачи <br>
-                        всему миру сенсационных <br>
-                        результатов
-                    </div>
-                </div>
-                <div class="stage-page-content-grid-item bottom wide page5">
-                    <div class="stage-page-content-grid-item-num">7</div>
-                    <div class="stage-page-content-grid-item-info">Создание аэропорта «Большие Васюки» <br>
-                        с регулярным отправлением почтовых <br>
-                        самолётов и дирижаблей во все концы <br class="mobile-hidden">
-                        света, включая Лос-Анжелос и Мельбурн
-                    </div>
-                </div>
-                <img src="./assets/images/plane.png" alt="" class="stage-page-content-grid-plane-img">
-            </div>
-            <div class="stage-page-content-bottom-buttons hidden">
-                <button onclick="prevPage()" class="stage-page-header-button left">
-                    <svg class="stage-page-header-button-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-color prev" cx="18" cy="18" r="18"
-                            transform="rotate(-180 18 18)" fill="#313131" />
-                        <path d="M20.0768 24.923L13.1537 17.9999L20.0768 11.0768" stroke="white" stroke-width="1.63636"
-                            stroke-linecap="square" />
-                    </svg>
-                </button>
-                <div class="stage-page-header-button-links">
-                    <svg onclick="changePage(1)" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-links-dot active" cx="5" cy="5" r="5" fill="#D9D9D9" />
-                    </svg>
-                    <svg onclick="changePage(2)" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-links-dot" cx="5" cy="5" r="5" fill="#D9D9D9" />
-                    </svg>
-                    <svg onclick="changePage(3)" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-links-dot" cx="5" cy="5" r="5" fill="#D9D9D9" />
-                    </svg>
-                    <svg onclick="changePage(4)" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-links-dot" cx="5" cy="5" r="5" fill="#D9D9D9" />
-                    </svg>
-                    <svg onclick="changePage(5)" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-links-dot" cx="5" cy="5" r="5" fill="#D9D9D9" />
-                    </svg>
-                </div>
-                <button onclick="nextPage()" class="stage-page-header-button right">
-                    <svg class="stage-page-header-button-svg" width="36" height="36" viewBox="0 0 36 36" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="stage-page-header-button-color next" cx="18" cy="18" r="18" fill="#313131" />
-                        <path d="M15.9232 11.0769L22.8463 18L15.9232 24.9231" stroke="white" stroke-width="1.63636"
-                            stroke-linecap="square" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="participant-page hidden">
-            <div class="participant-page-head">
-                <h1 id="focus-more" class="stage-page-head-header wide">Участники турнира</h1>
-                <div class="participant-page-header-buttons mobile-hidden">
-                    <button onclick="prevForm()" class="participant-page-header-button left">
-                        <svg class="participant-page-header-button-svg" width="36" height="36" viewBox="0 0 36 36"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="participant-page-header-button-color prev" cx="18" cy="18" r="18"
-                                transform="rotate(-180 18 18)" fill="#313131" />
-                            <path d="M20.0768 24.923L13.1537 17.9999L20.0768 11.0768" stroke="white"
-                                stroke-width="1.63636" stroke-linecap="square" />
-                        </svg>
-                    </button>
-                    <p class="participant-page-header-button-page"><span id="formNum-pc"></span> <span
-                            class="participant-page-header-button-page opacity">/ 6</span></p>
-                    <button onclick="nextForm()" class="participant-page-header-button right">
-                        <svg class="participant-page-header-button-svg" width="36" height="36" viewBox="0 0 36 36"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="participant-page-header-button-color next" cx="18" cy="18" r="18"
-                                fill="#313131" />
-                            <path d="M15.9232 11.0769L22.8463 18L15.9232 24.9231" stroke="white" stroke-width="1.63636"
-                                stroke-linecap="square" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="participant-page-content">
-                <div class="participant-page-content-form form1 pc-form1">
-                    <img src="./assets/images/profile.png" alt="" class="participant-page-content-form-img">
-                    <div class="participant-page-content-form-info">
-                        <h1 class="participant-page-content-form-info-text name">Хозе-Рауль Капабланка</h1>
-                        <p class="participant-page-content-form-info-text champion">Чемпион мира по шахматам</p>
-                    </div>
-                    <button class="participant-page-content-form-button-more">Подробнее</button>
-                </div>
-                <div class="participant-page-content-form form2 pc-form1">
-                    <img src="./assets/images/profile.png" alt="" class="participant-page-content-form-img">
-                    <div class="participant-page-content-form-info">
-                        <h1 class="participant-page-content-form-info-text name">Эммануил Ласкер</h1>
-                        <p class="participant-page-content-form-info-text champion">Чемпион мира по шахматам</p>
-                    </div>
-                    <button class="participant-page-content-form-button-more">Подробнее</button>
-                </div>
-                <div class="participant-page-content-form form3 pc-form1">
-                    <img src="./assets/images/profile.png" alt="" class="participant-page-content-form-img">
-                    <div class="participant-page-content-form-info">
-                        <h1 class="participant-page-content-form-info-text name">Александр Алехин</h1>
-                        <p class="participant-page-content-form-info-text champion">Чемпион мира по шахматам</p>
-                    </div>
-                    <button class="participant-page-content-form-button-more">Подробнее</button>
-                </div>
-                <div class="participant-page-content-form form4 pc-form2">
-                    <img src="./assets/images/profile.png" alt="" class="participant-page-content-form-img">
-                    <div class="participant-page-content-form-info">
-                        <h1 class="participant-page-content-form-info-text name">Арон Нимцович</h1>
-                        <p class="participant-page-content-form-info-text champion">Чемпион мира по шахматам</p>
-                    </div>
-                    <button class="participant-page-content-form-button-more">Подробнее</button>
-                </div>
-                <div class="participant-page-content-form form5 pc-form2">
-                    <img src="./assets/images/profile.png" alt="" class="participant-page-content-form-img">
-                    <div class="participant-page-content-form-info">
-                        <h1 class="participant-page-content-form-info-text name">Рихард Рети</h1>
-                        <p class="participant-page-content-form-info-text champion">Чемпион мира по шахматам</p>
-                    </div>
-                    <button class="participant-page-content-form-button-more">Подробнее</button>
-                </div>
-                <div class="participant-page-content-form form6 pc-form2">
-                    <img src="./assets/images/profile.png" alt="" class="participant-page-content-form-img">
-                    <div class="participant-page-content-form-info">
-                        <h1 class="participant-page-content-form-info-text name">Остап Бендер</h1>
-                        <p class="participant-page-content-form-info-text champion">Гроссмейстер</p>
-                    </div>
-                    <button class="participant-page-content-form-button-more">Подробнее</button>
-                </div>
-            </div>
-            <div class="participant-page-header-buttons hidden">
-                <div class="stage-page-content-bottom-buttons hidden">
-                    <button onclick="prevForm()" class="participant-page-header-button left">
-                        <svg class="participant-page-header-button-svg" width="36" height="36" viewBox="0 0 36 36"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="participant-page-header-button-color prev" cx="18" cy="18" r="18"
-                                transform="rotate(-180 18 18)" fill="#313131" />
-                            <path d="M20.0768 24.923L13.1537 17.9999L20.0768 11.0768" stroke="white"
-                                stroke-width="1.63636" stroke-linecap="square" />
-                        </svg>
-                    </button>
-                    <p class="participant-page-header-button-page"><span id="formNum"></span> <span
-                            class="participant-page-header-button-page opacity">/
-                            6</span></p>
-                    <button onclick="nextForm()" class="participant-page-header-button right">
-                        <svg class="participant-page-header-button-svg" width="36" height="36" viewBox="0 0 36 36"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="participant-page-header-button-color next" cx="18" cy="18" r="18"
-                                fill="#313131" />
-                            <path d="M15.9232 11.0769L22.8463 18L15.9232 24.9231" stroke="white" stroke-width="1.63636"
-                                stroke-linecap="square" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <marquee class="footer-running-line bottom hidden" direction="right">
-            <span class="footer-running-line-text">Дело помощи утопающим — дело рук самих утопающих!</span>
-            <img class="footer-running-line-text-dot" src="./assets/images/footer/text-dot.svg" alt="">
-            <span class="footer-running-line-text">Шахматы двигают вперед не только культуру, но и экономику!</span>
-            <img class="footer-running-line-text-dot" src="./assets/images/footer/text-dot.svg" alt="">
-            <span class="footer-running-line-text">Лед тронулся, господа присяжные заседатели!</span>
-            <img class="footer-running-line-text-dot" src="./assets/images/footer/text-dot.svg" alt="">
-        </marquee>
-        <div class="footer-page hidden">
-            <p class="footer-page-text">
-                Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями
-                можно познакомиться в главе XXXIV <br class="mobile-hidden">
-                романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
-            </p>
-        </div>
-    </body>
-    <script>
-        function loadScript(url) {
-            var script = document.createElement('script');
-            script.src = url;
-            script.classList.add('page-script')
-            document.head.appendChild(script);
-        }
+    </div>
+</body>
 
-        function turnOnScript(width) {
-            if (width <= 1365) {
-                loadScript('./assets/scripts/mobile-script.js');
-            } else {
-                loadScript('./assets/scripts/notebook-script.js');
-            }
-        }
-
-        window.addEventListener('resize', function () {
-            screenWidth = window.innerWidth;
-            console.log('Ширина страницы изменена: ' + screenWidth + 'px');
-            location.reload();
-        });
-
-        var screenWidth = window.innerWidth;
-        turnOnScript(screenWidth);
-
-    </script>
-    <script src="./assets/scripts/focus-script.js"></script>
-
-    </html>
+</html>
